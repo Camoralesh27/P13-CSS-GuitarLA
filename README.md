@@ -42,3 +42,31 @@ No te genera más contenido pero da un máximo y lo corta, por ello hay que .
     overflow: hidden;
 }
 ```
+
+## border y outline en "select" de form
+
+```css
+.producto__cantidad {
+    border: 2px solid var(--primary);
+}
+
+.producto__cantidad:focus-visible {
+    outline: 2px solid var(--primary);
+    border: none;
+}
+```
+El focus visible es el border al rededor del **select**, pero para que no se empalmen los 2 por eso quitamos el border al momento de activarse **focus-visible**.
+
+## display flex
+Display flex actua tomando todo el ancho de su contenedor. Así le hicimos en producto.html para que el solect tomara todo el ancho del contenedor.
+
+```css 
+
+.producto__formulario {
+    /* Hace que se extienda en todo el bloque */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+```
